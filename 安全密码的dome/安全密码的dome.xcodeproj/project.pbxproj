@@ -15,6 +15,10 @@
 		4E7A46CD1BEC3C4400513F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7A46CB1BEC3C4400513F49 /* LaunchScreen.storyboard */; };
 		4E7A46D81BEC3C4400513F49 /* _____domeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46D71BEC3C4400513F49 /* _____domeTests.m */; };
 		4E7A46E31BEC3C4400513F49 /* _____domeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46E21BEC3C4400513F49 /* _____domeUITests.m */; };
+		4E7A46F21BEC464800513F49 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46F11BEC464800513F49 /* LockViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4E7A46F51BEC4DAB00513F49 /* NNLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46F41BEC4DAB00513F49 /* NNLockView.m */; settings = {ASSET_TAGS = (); }; };
+		4E7A46FA1BEC4F3C00513F49 /* YLSwipeLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46F71BEC4F3C00513F49 /* YLSwipeLockView.m */; settings = {ASSET_TAGS = (); }; };
+		4E7A46FB1BEC4F3C00513F49 /* YLSwipeLockNodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A46F91BEC4F3C00513F49 /* YLSwipeLockNodeView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		4E7A46DE1BEC3C4400513F49 /* 安全密码的domeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "安全密码的domeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7A46E21BEC3C4400513F49 /* _____domeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____domeUITests.m"; sourceTree = "<group>"; };
 		4E7A46E41BEC3C4400513F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7A46F01BEC464800513F49 /* LockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		4E7A46F11BEC464800513F49 /* LockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
+		4E7A46F31BEC4DAB00513F49 /* NNLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLockView.h; sourceTree = "<group>"; };
+		4E7A46F41BEC4DAB00513F49 /* NNLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLockView.m; sourceTree = "<group>"; };
+		4E7A46F61BEC4F3C00513F49 /* YLSwipeLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSwipeLockView.h; sourceTree = "<group>"; };
+		4E7A46F71BEC4F3C00513F49 /* YLSwipeLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSwipeLockView.m; sourceTree = "<group>"; };
+		4E7A46F81BEC4F3C00513F49 /* YLSwipeLockNodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSwipeLockNodeView.h; sourceTree = "<group>"; };
+		4E7A46F91BEC4F3C00513F49 /* YLSwipeLockNodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSwipeLockNodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,14 @@
 				4E7A46C11BEC3C4400513F49 /* AppDelegate.m */,
 				4E7A46C31BEC3C4400513F49 /* ViewController.h */,
 				4E7A46C41BEC3C4400513F49 /* ViewController.m */,
+				4E7A46F01BEC464800513F49 /* LockViewController.h */,
+				4E7A46F11BEC464800513F49 /* LockViewController.m */,
+				4E7A46F61BEC4F3C00513F49 /* YLSwipeLockView.h */,
+				4E7A46F71BEC4F3C00513F49 /* YLSwipeLockView.m */,
+				4E7A46F81BEC4F3C00513F49 /* YLSwipeLockNodeView.h */,
+				4E7A46F91BEC4F3C00513F49 /* YLSwipeLockNodeView.m */,
+				4E7A46F31BEC4DAB00513F49 /* NNLockView.h */,
+				4E7A46F41BEC4DAB00513F49 /* NNLockView.m */,
 				4E7A46C61BEC3C4400513F49 /* Main.storyboard */,
 				4E7A46C91BEC3C4400513F49 /* Assets.xcassets */,
 				4E7A46CB1BEC3C4400513F49 /* LaunchScreen.storyboard */,
@@ -274,8 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E7A46C51BEC3C4400513F49 /* ViewController.m in Sources */,
+				4E7A46FB1BEC4F3C00513F49 /* YLSwipeLockNodeView.m in Sources */,
 				4E7A46C21BEC3C4400513F49 /* AppDelegate.m in Sources */,
 				4E7A46BF1BEC3C4400513F49 /* main.m in Sources */,
+				4E7A46F51BEC4DAB00513F49 /* NNLockView.m in Sources */,
+				4E7A46F21BEC464800513F49 /* LockViewController.m in Sources */,
+				4E7A46FA1BEC4F3C00513F49 /* YLSwipeLockView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +523,7 @@
 				4E7A46E91BEC3C4400513F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E7A46EA1BEC3C4400513F49 /* Build configuration list for PBXNativeTarget "安全密码的domeTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +532,7 @@
 				4E7A46EC1BEC3C4400513F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E7A46ED1BEC3C4400513F49 /* Build configuration list for PBXNativeTarget "安全密码的domeUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +541,7 @@
 				4E7A46EF1BEC3C4400513F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

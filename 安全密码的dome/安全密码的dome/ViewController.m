@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
-
+#import "LockViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -25,7 +25,20 @@
     LAContext *context = [[LAContext alloc]init];
     NSError *error;
     if (![context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]) {
-        NSLog(@"低价位error:%@",error.localizedDescription);
+        NSLog(@"当前的设备不支持指纹识别:%@",error.localizedDescription);
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示你哦" message:@"去设置手势密码吧" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"去设置" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            LockViewController *lock = [[LockViewController alloc]init];
+            [self presentViewController:lock animated:YES completion:nil];
+
+        }];
+        [alertController addAction:cancelAction];
+        [alertController addAction:okAction];
+  
+        [self presentViewController:alertController animated:YES completion:nil];
         
         return;
     }
